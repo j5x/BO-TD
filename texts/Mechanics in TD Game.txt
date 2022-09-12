@@ -1,0 +1,9 @@
+Wat ik in een TD Game zie:
+
+Waypoints
+Spawners
+Enemies
+Ranges
+Defensive items
+Routes
+
