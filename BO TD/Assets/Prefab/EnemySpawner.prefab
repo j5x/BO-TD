@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1446989311570356911
+--- !u!1 &8216270816135726107
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,8 +8,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 397890056826584018}
-  - component: {fileID: 4108227935467645783}
+  - component: {fileID: 8216270816135726105}
+  - component: {fileID: 1925655623519320092}
   m_Layer: 0
   m_Name: EnemySpawner
   m_TagString: Untagged
@@ -17,31 +17,49 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &397890056826584018
+--- !u!4 &8216270816135726105
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1446989311570356911}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 32.12, y: 2.94, z: -35.82}
+  m_GameObject: {fileID: 8216270816135726107}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.4, y: 0.26, z: -6.29}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4108227935467645783
+--- !u!114 &1925655623519320092
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1446989311570356911}
+  m_GameObject: {fileID: 8216270816135726107}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bf17d0411b44154db926afc4ba7169d, type: 3}
+  m_Script: {fileID: 11500000, guid: 902b565fc283f5340afb21c0927b34e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnemyPrefab: {fileID: 8460260589796202445, guid: 90be68679772e2942943a6b5f13411d5, type: 3}
-  EnemyInterval: 1.5
+  waves:
+  - name: Wave1
+    enemy: {fileID: 0}
+    count: 5
+    rate: 0.7
+  - name: Wave2
+    enemy: {fileID: 0}
+    count: 10
+    rate: 0.7
+  - name: Wave3
+    enemy: {fileID: 0}
+    count: 20
+    rate: 0.7
+  - name: Wave4
+    enemy: {fileID: 0}
+    count: 40
+    rate: 0.7
+  spawnPoints:
+  - {fileID: 8216270816135726105}
+  timeBetweenWaves: 5
