@@ -879,13 +879,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1666586869}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.5, y: 0, z: -0.24}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.29, y: 0, z: 0.42}
   m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_Children: []
   m_Father: {fileID: 1389855148}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1666586871
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1075,13 +1075,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2045637320}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.5, y: 0, z: 0.19}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.22, y: 0, z: 0.43}
   m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_Children: []
   m_Father: {fileID: 1389855148}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &2045637322
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1766,6 +1766,22 @@ PrefabInstance:
       propertyPath: waveCountdownText
       value: 
       objectReference: {fileID: 1610043848}
+    - target: {fileID: 1925655623519320092, guid: 1b993aa29b3e40e449cfc3212142cb7a, type: 3}
+      propertyPath: waves.Array.data[0].enemy
+      value: 
+      objectReference: {fileID: 6725429157558157764, guid: 79d57b00d1c7c4245a95b87866ad99f6, type: 3}
+    - target: {fileID: 1925655623519320092, guid: 1b993aa29b3e40e449cfc3212142cb7a, type: 3}
+      propertyPath: waves.Array.data[1].enemy
+      value: 
+      objectReference: {fileID: 6725429157558157764, guid: 79d57b00d1c7c4245a95b87866ad99f6, type: 3}
+    - target: {fileID: 1925655623519320092, guid: 1b993aa29b3e40e449cfc3212142cb7a, type: 3}
+      propertyPath: waves.Array.data[2].enemy
+      value: 
+      objectReference: {fileID: 6725429157558157764, guid: 79d57b00d1c7c4245a95b87866ad99f6, type: 3}
+    - target: {fileID: 1925655623519320092, guid: 1b993aa29b3e40e449cfc3212142cb7a, type: 3}
+      propertyPath: waves.Array.data[3].enemy
+      value: 
+      objectReference: {fileID: 6725429157558157764, guid: 79d57b00d1c7c4245a95b87866ad99f6, type: 3}
     - target: {fileID: 8216270816135726105, guid: 1b993aa29b3e40e449cfc3212142cb7a, type: 3}
       propertyPath: m_RootOrder
       value: 13
