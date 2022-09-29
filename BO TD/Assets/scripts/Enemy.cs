@@ -22,7 +22,7 @@ public class Enemy : MonoBehaviour
             {
                 currentWaypoint++;
             }
-            if (currentWaypoint == waypoints.Length)
+            if (currentWaypoint == waypoints.Length -1)
             {
                 Destroy(gameObject);
             }
