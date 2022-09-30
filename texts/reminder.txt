@@ -1,0 +1,1 @@
+Start small then go bigger, for example: Start with spawning bullets then make them trace the enemie
