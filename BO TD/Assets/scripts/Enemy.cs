@@ -6,6 +6,7 @@ public class Enemy : MonoBehaviour
 {
     public GameObject enemyPrefab;
     public GameObject[] waypoints;
+    public int Health;
     public int speed = 5;
     private int currentWaypoint = 0;
     float WPradius = 1;
@@ -30,5 +31,16 @@ public class Enemy : MonoBehaviour
         }
         transform.position = Vector3.MoveTowards(transform.position, waypoints[currentWaypoint].transform.position, speed * Time.deltaTime);
 
+    }
+
+
+
+    public void TakeDamage()
+    {
+        
+        if (Health == 0)
+        {
+            Destroy(gameObject);
+        }
     }
 }
