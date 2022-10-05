@@ -9,7 +9,7 @@ public class Enemy : MonoBehaviour
     public int Health;
     public int speed = 5;
     private int currentWaypoint = 0;
-    float WPradius = 1;
+    float WPradius = .1f;
 
     void Update()
     {
