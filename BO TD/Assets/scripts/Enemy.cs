@@ -10,6 +10,13 @@ public class Enemy : MonoBehaviour
     public int speed = 5;
     private int currentWaypoint = 0;
     float WPradius = .1f;
+    private Shop shopscript;
+
+    public void Start()
+    {
+        shopscript = FindObjectOfType<Shop>();
+    }
+
 
     void Update()
     {
@@ -27,6 +34,11 @@ public class Enemy : MonoBehaviour
             {
                 Destroy(gameObject);
             }
+            if (currentWaypoint == 8)
+            {
+                Application.LoadLevel(0);
+            }
+            
 
         }
         transform.position = Vector3.MoveTowards(transform.position, waypoints[currentWaypoint].transform.position, speed * Time.deltaTime);
@@ -40,7 +52,9 @@ public class Enemy : MonoBehaviour
         
         if (Health == 0)
         {
-            Destroy(gameObject);
+           shopscript.currency++;
+           Destroy(gameObject);
+            
         }
     }
 }

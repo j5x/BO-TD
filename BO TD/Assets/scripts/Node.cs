@@ -12,7 +12,7 @@ public class Node : MonoBehaviour
 
     private Renderer rend;
     public Color startColor;
-
+    public bool CanPlace;
     BuildManager buildManager;
 
 
@@ -34,8 +34,9 @@ public class Node : MonoBehaviour
 
         }
         GameObject turretToBuild = buildManager.GetTurretToBuild();
-        turret = (GameObject)Instantiate(turretToBuild, transform.position + positionOffset, transform.rotation);
+        CanPlace = turret = (GameObject)Instantiate(turretToBuild, transform.position + positionOffset, transform.rotation);
         turret.transform.parent = transform;
+        
     }
     private void OnMouseEnter()
     {
@@ -45,7 +46,7 @@ public class Node : MonoBehaviour
         
     }
 
-    void OnMouseExit()
+    public void OnMouseExit()
     {
         rend.material.color = startColor;
     }
