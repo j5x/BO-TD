@@ -61,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 388549f7a3ec6024e9728a8eca0cffb3, type: 2}
+  - {fileID: 2100000, guid: 8a085152eefdbe14d9dbc2df5bf4b317, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -108,7 +108,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6083d23891391104fa726c3522fb5bfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 6725429157558157769}
   waypoints:
   - {fileID: 4267820926205470890, guid: 9e537553f378fcd46991952a03cc3809, type: 3}
   - {fileID: 7428249646165621759, guid: 45206b6fdac62b34e81c01a2481febf4, type: 3}
@@ -119,4 +118,5 @@ MonoBehaviour:
   - {fileID: 4527020700920524400, guid: 252d338cb5ffc174fa54387ba2b82e2f, type: 3}
   - {fileID: 3742832846919506665, guid: 4bae042782b5b6d418a45abdc0643a8c, type: 3}
   - {fileID: 3742832846919506665, guid: 4bae042782b5b6d418a45abdc0643a8c, type: 3}
+  Health: 0
   speed: 5

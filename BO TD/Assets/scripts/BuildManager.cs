@@ -6,7 +6,12 @@ public class BuildManager : MonoBehaviour
 {
     public static BuildManager instance;
 
+    Shop shopscript;
 
+    public void Start()
+    {
+        
+    }
     private void Awake()
     {
         if (instance != null)
@@ -15,9 +20,12 @@ public class BuildManager : MonoBehaviour
             return;
         }
         instance = this;
+        
     }
 
     public GameObject standardTurretPrefab;
+    
+
 
 
     private GameObject turretToBuild;
@@ -30,5 +38,6 @@ public class BuildManager : MonoBehaviour
     public void SetTurretToBuild(GameObject turret)
     {
         turretToBuild = turret;
+        
     }
 }

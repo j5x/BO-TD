@@ -3,14 +3,14 @@ using UnityEngine.AI;
 using System.Collections;
 
 public class Enemy : MonoBehaviour
-{
-    public GameObject enemyPrefab;
+{ 
     public GameObject[] waypoints;
     public int Health;
-    public int speed = 5;
+    public int speed;
     private int currentWaypoint = 0;
     float WPradius = .1f;
     private Shop shopscript;
+    WaveSpawner waveSpawner;
 
     public void Start()
     {
@@ -30,7 +30,7 @@ public class Enemy : MonoBehaviour
             {
                 currentWaypoint++;
             }
-            if (currentWaypoint == waypoints.Length -1)
+            if (currentWaypoint == waypoints.Length - 1)
             {
                 Destroy(gameObject);
             }
@@ -39,7 +39,6 @@ public class Enemy : MonoBehaviour
                 Application.LoadLevel(0);
             }
             
-
         }
         transform.position = Vector3.MoveTowards(transform.position, waypoints[currentWaypoint].transform.position, speed * Time.deltaTime);
 

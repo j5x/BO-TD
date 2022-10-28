@@ -12,8 +12,8 @@ public class Node : MonoBehaviour
 
     private Renderer rend;
     public Color startColor;
-    public bool CanPlace;
     BuildManager buildManager;
+    Shop shopscript;
 
 
     void  Start()
@@ -21,6 +21,7 @@ public class Node : MonoBehaviour
         rend = GetComponent<Renderer>();
         startColor = rend.material.color;
         buildManager = BuildManager.instance;
+        shopscript = gameObject.GetComponent<Shop>();
     }
     void OnMouseDown()
     {
@@ -29,12 +30,12 @@ public class Node : MonoBehaviour
 
        if (turret != null)
         {
-            Debug.Log("nigga");
+            Debug.Log("sup");
             return;
 
         }
         GameObject turretToBuild = buildManager.GetTurretToBuild();
-        CanPlace = turret = (GameObject)Instantiate(turretToBuild, transform.position + positionOffset, transform.rotation);
+        turret = (GameObject)Instantiate(turretToBuild, transform.position + positionOffset, transform.rotation);
         turret.transform.parent = transform;
         
     }

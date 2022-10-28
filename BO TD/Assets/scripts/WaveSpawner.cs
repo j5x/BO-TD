@@ -19,7 +19,7 @@ public class WaveSpawner : MonoBehaviour
     public Text waveCountdownText;
 
     public Wave[] waves;
-    private int nextWave = 0;
+    public int nextWave = 0;
     public int NextWave
     {
         get { return nextWave + 1; }
